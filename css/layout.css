@@ -1,0 +1,221 @@
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    position: relative;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--code-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(110, 93, 207, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.contact-form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--light);
+    font-weight: 500;
+    font-family: 'Fira Code', monospace;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--darker);
+    border: 1px solid rgba(110, 93, 207, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+    color: var(--light);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.2);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--light);
+    opacity: 0.7;
+    font-family: 'Fira Code', monospace;
+}
+
+input[readonly] {
+    background-color: rgba(110, 93, 207, 0.1);
+    cursor: not-allowed;
+}
+
+/* Form message styles */
+.form-message {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    animation: fadeIn 0.5s forwards;
+}
+
+.form-message.success {
+    background-color: rgba(0, 255, 157, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.form-message.error {
+    background-color: rgba(255, 56, 100, 0.1);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background-color: var(--darker);
+    color: var(--light);
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-circuit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image:
+        radial-gradient(var(--primary) 2px, transparent 2px),
+        radial-gradient(var(--primary) 2px, transparent 2px);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    pointer-events: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: var(--light);
+    font-size: 24px;
+    transition: all 0.3s;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: var(--code-bg);
+    border: 1px solid rgba(110, 93, 207, 0.3);
+}
+
+.social-links a:hover {
+    color: var(--dark);
+    background-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 157, 0.4);
+}
+
+.footer-text {
+    margin-top: 20px;
+    color: var(--light);
+    opacity: 0.7;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid var(--primary);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary) }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 0 50px;
+    }
+
+    .hero-content {
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-bottom: 50px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}

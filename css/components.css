@@ -1,0 +1,296 @@
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary);
+    padding: 12px 30px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: var(--dark);
+}
+
+.btn:hover::before {
+    left: 0;
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--light);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    content: '{ ';
+    color: var(--primary);
+}
+
+.section-title::after {
+    content: ' }';
+    color: var(--primary);
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: var(--light);
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Fira Code', monospace;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--code-bg);
+    border-radius: 10px;
+    border-left: 3px solid var(--primary);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.code-comment {
+    color: #6c757d;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 0;
+    position: relative;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.skill-card {
+    background-color: var(--code-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border: 1px solid transparent;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.skill-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary);
+}
+
+.skill-card h3 {
+    margin: 20px 0;
+    color: var(--light);
+}
+
+.skill-icon {
+    font-size: 40px;
+    color: var(--primary);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.2);
+}
+
+.skill-percent {
+    height: 6px;
+    background-color: var(--darker);
+    border-radius: 3px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-percent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--primary);
+    transition: width 1.5s ease;
+}
+
+.skill-card[data-percent="90"] .skill-percent::before {
+    width: 90%;
+}
+
+.skill-card[data-percent="85"] .skill-percent::before {
+    width: 85%;
+}
+
+.skill-card[data-percent="80"] .skill-percent::before {
+    width: 80%;
+}
+
+.skill-card[data-percent="75"] .skill-percent::before {
+    width: 75%;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 0;
+    position: relative;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.project-card {
+    background-color: var(--code-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, box-shadow 0.5s;
+    position: relative;
+    border: 1px solid rgba(110, 93, 207, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--secondary);
+}
+
+.project-img {
+    height: 200px;
+    background-color: var(--darker);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project-tech {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(14, 21, 37, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--primary);
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+}
+
+.project-content {
+    padding: 20px;
+    position: relative;
+}
+
+.project-content h3 {
+    margin-bottom: 10px;
+    color: var(--light);
+    transition: color 0.3s;
+}
+
+.project-card:hover .project-content h3 {
+    color: var(--primary);
+}
+
+.project-content p {
+    color: var(--light);
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: 'Fira Code', monospace;
+}
+
+.project-link:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}

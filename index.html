@@ -1,13 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hopgausi">
+    <meta name="contact" content="hopgausi@gmail.com">
+    <title>hopgausi | Software Developer Portfolio</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">hopgausi</div>
+                <ul class="nav-links">
+                    <li><a href="#home">_home</a></li>
+                    <li><a href="#about">_about</a></li>
+                    <li><a href="#skills">_skills</a></li>
+                    <li><a href="#projects">_projects</a></li>
+                    <li><a href="#contact">_contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tag">// Hello World</p>
+                <h1>I'm <span>Software Developer</span></h1>
+                <p class="terminal-text">Full Stack Developer & Health Systems Specialist</p>
+                <p>Building innovative health information systems with 4+ years of experience in designing and implementing solutions that impact public health.</p>
+                <a href="#contact" class="btn">$ contact_me</a>
+            </div>
+            <div class="hero-img">
+                <img src="https://via.placeholder.com/400x400/1e2a42/00ff9d?text=Your+Photo" alt="Your Photo">
+            </div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <p class="section-subtitle">/* who am i */</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p><span class="code-comment">// A bit about my background</span><br>
+                    I'm a results-driven Software Developer with 4+ years of experience in designing and implementing innovative health information systems. My journey in tech began at the University of Malawi, where I earned my Bachelor of Science in Computer Science with minors in Statistics and Mathematics.</p>
+
+                    <p>With expertise in full-stack development, data integration, and epidemic modeling, I deliver scalable, efficient, and impactful solutions. I'm particularly passionate about optimizing data management workflows and ensuring robust cybersecurity measures in healthcare systems.</p>
+
+                    <p><span class="code-comment">// Current professional focus</span><br>
+                    Currently working at Elizabeth Glaser Pediatric AIDS Foundation, where I spearhead the development and deployment of Laboratory Information Management Systems (LIMS) for the Malawi Government under CDC (PEPFAR), impacting 50+ hospitals nationwide. I'm also involved in epidemic modeling at the Center for Epidemiological and Mathematics Research.</p>
+
+                    <p><span class="code-comment">// When I'm not coding</span><br>
+                    Outside of development, I'm pursuing my Cisco Certified Network Associate (CCNA) certification and continuously exploring new technologies in healthcare informatics and public health initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            <p class="section-subtitle">/* what i do */</p>
+
+            <div class="skills-container">
+                <div class="skill-card" data-percent="90">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Vue.js, JavaScript, HTML5, CSS3, Bootstrap</p>
+                    <div class="skill-percent"></div>
+                </div>
+
+                <div class="skill-card" data-percent="85">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Python, PHP, Ruby, Node.js, Django, Laravel, Ruby on Rails</p>
+                    <div class="skill-percent"></div>
+                </div>
+
+                <div class="skill-card" data-percent="90">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>MySQL, PostgreSQL, NoSQL (CouchDB), Data Integration</p>
+                    <div class="skill-percent"></div>
+                </div>
+
+                <div class="skill-card" data-percent="80">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Python (Pandas, NumPy, SciPy), R (ggplot2, dplyr)</p>
+                    <div class="skill-percent"></div>
+                </div>
+
+                <div class="skill-card" data-percent="75">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps & Infrastructure</h3>
+                    <p>Docker, Git/GitHub, Bash Scripting, Linux (Ubuntu)</p>
+                    <div class="skill-percent"></div>
+                </div>
+
+                <div class="skill-card" data-percent="85">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>RESTful APIs, WebSockets, ASTM and HL7 protocols</p>
+                    <div class="skill-percent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">My Projects</h2>
+            </div>
+            <p class="section-subtitle">/* what i've built */</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e2a42/00ff9d?text=LIMS+Project" alt="LIMS Project">
+                        <div class="project-tech">Vue.js / Django / MySQL</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Laboratory Information Management System</h3>
+                        <p>A comprehensive LIMS solution for healthcare facilities, enabling efficient sample tracking, test management, and result reporting.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Health+Dashboard" alt="Health Dashboard">
+                        <div class="project-tech">React / Node.js / MongoDB</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Health Metrics Dashboard</h3>
+                        <p>Interactive dashboard for visualizing public health data, featuring real-time updates and customizable reports for healthcare administrators.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400/1e2a42/ff3864?text=API+Integration" alt="API Integration">
+                        <div class="project-tech">Python / FastAPI / PostgreSQL</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Health Systems API Integration</h3>
+                        <p>Developed a robust API gateway that connects multiple health information systems, enabling seamless data exchange using HL7 standards.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <p class="section-subtitle">/* let's connect */</p>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required placeholder="Your email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reply-to">Reply To</label>
+                        <input type="email" id="reply-to" class="form-control" value="hopgausi@gmail.com" readonly>
+                        <small class="form-text">Your message will be sent to this email</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-circuit"></div>
+            <ul class="social-links">
+                <li><a href="https://github.com/hopgausi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/hopgausi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/hopgausi" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="mailto:hopgausi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <p class="footer-text">&copy; 2023 hopgausi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
