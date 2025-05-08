@@ -23,7 +23,14 @@
       ],
       "challenges": "One of the main challenges was ensuring the system could operate reliably in environments with intermittent internet connectivity. We implemented a robust offline mode with data synchronization capabilities to address this issue.",
       "outcome": "Successfully deployed in 50+ hospitals nationwide, processing over 10,000 samples daily with a 40% reduction in result turnaround time.",
-      "projectUrl": "#",
+      "projectUrl": "https://lims.example.com",
+      "githubUrl": "https://github.com/hopgausi/lims-project",
+      "blogPost": {
+        "title": "Building a Resilient LIMS for Low-Resource Settings",
+        "url": "https://medium.com/@hopgausi/health-data-integration"
+      },
+      "demoType": "ui",
+      "demoUrl": "https://lims-demo.example.com",
       "featured": true
     },
     {
@@ -49,7 +56,14 @@
       ],
       "challenges": "Integrating disparate data sources with varying formats and update frequencies presented significant challenges. We developed a flexible ETL pipeline with data validation and transformation capabilities to ensure data consistency.",
       "outcome": "The dashboard is now used by health officials in 28 districts, leading to more data-driven decision making and a 25% improvement in resource allocation efficiency.",
-      "projectUrl": "#",
+      "projectUrl": "https://health-dashboard.example.com",
+      "githubUrl": "https://github.com/hopgausi/health-dashboard",
+      "blogPost": {
+        "title": "Effective Data Visualization Techniques for Healthcare Dashboards",
+        "url": "https://dev.to/hopgausi/data-visualization-healthcare"
+      },
+      "demoType": "ui",
+      "demoUrl": "https://health-dashboard-demo.example.com",
       "featured": true
     },
     {
@@ -75,7 +89,14 @@
       ],
       "challenges": "Ensuring interoperability between systems with different data models and security requirements was complex. We implemented a flexible mapping engine and robust security layer to address these challenges.",
       "outcome": "Successfully integrated 12 different health information systems, reducing manual data entry by 70% and improving data accuracy by 45%.",
-      "projectUrl": "#",
+      "projectUrl": "https://api-gateway.example.com",
+      "githubUrl": "https://github.com/hopgausi/health-api-gateway",
+      "blogPost": {
+        "title": "Integrating Health Systems: Challenges and Solutions",
+        "url": "https://medium.com/@hopgausi/health-data-integration"
+      },
+      "demoType": "api",
+      "demoUrl": "https://api-gateway.example.com/docs",
       "featured": true
     },
     {
@@ -101,7 +122,14 @@
       ],
       "challenges": "Balancing model complexity with computational efficiency while ensuring results were accessible to non-technical stakeholders required careful design considerations.",
       "outcome": "The system has been used to inform COVID-19 response strategies, contributing to a more targeted approach that optimized limited resources.",
-      "projectUrl": "#",
+      "projectUrl": "https://epidemic-modeling.example.com",
+      "githubUrl": "https://github.com/hopgausi/epidemic-modeling",
+      "blogPost": {
+        "title": "Epidemic Modeling with Python: From Basic SIR to Agent-Based Models",
+        "url": "https://towardsdatascience.com/@hopgausi/epidemic-modeling-python"
+      },
+      "demoType": "ui",
+      "demoUrl": "https://epidemic-modeling-demo.example.com",
       "featured": false
     },
     {
@@ -109,7 +137,7 @@
       "title": "Telehealth Consultation Platform",
       "shortDescription": "A secure video consultation platform connecting patients with healthcare providers, featuring appointment scheduling and electronic health record integration.",
       "fullDescription": "The Telehealth Consultation Platform provides a secure environment for remote medical consultations, addressing the challenge of healthcare access in rural areas. The system includes appointment scheduling, video consultations, electronic prescriptions, and integration with existing health records systems.",
-      "image": "https://unsplash.com/photos/a-couple-of-white-pedestals-sitting-next-to-each-other-Sm4iCS8CMtQ",
+      "image": "https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Telehealth+Platform",
       "technologies": ["WebRTC", "React", "Node.js"],
       "techStack": {
         "frontend": ["React", "Redux", "WebRTC", "Material UI"],
@@ -127,7 +155,14 @@
       ],
       "challenges": "Ensuring reliable video quality in areas with limited bandwidth while maintaining strict security and privacy standards was a significant technical challenge.",
       "outcome": "The platform has facilitated over 5,000 remote consultations, providing healthcare access to patients in underserved areas and reducing travel time by an average of 3 hours per consultation.",
-      "projectUrl": "#",
+      "projectUrl": "https://telehealth.example.com",
+      "githubUrl": "https://github.com/hopgausi/telehealth-platform",
+      "blogPost": {
+        "title": "Offline-First Approach for Healthcare Applications in Low-Resource Settings",
+        "url": "https://medium.com/@hopgausi/offline-first-healthcare"
+      },
+      "demoType": "ui",
+      "demoUrl": "https://telehealth-demo.example.com",
       "featured": false
     }
   ]

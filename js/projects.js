@@ -133,6 +133,13 @@ async function renderProjectDetail() {
             <div class="project-tech-tags">
                 ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
             </div>
+            <div class="project-links">
+                ${project.githubUrl ? `<a href="${project.githubUrl}" class="project-link-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>` : ''}
+                ${project.demoType === 'ui' ?
+                    `<a href="${project.demoUrl}" class="project-link-btn" target="_blank"><i class="fas fa-desktop"></i> View Live Demo</a>` :
+                    `<a href="${project.demoUrl}" class="project-link-btn" target="_blank"><i class="fas fa-book"></i> API Documentation</a>`
+                }
+            </div>
         </div>
 
         <div class="project-image">
@@ -175,6 +182,18 @@ async function renderProjectDetail() {
                 <h2>Outcome</h2>
                 <p>${project.outcome}</p>
             </div>
+
+            ${project.blogPost ? `
+            <div class="project-blog">
+                <h2>Related Blog Post</h2>
+                <div class="blog-post-card">
+                    <h3>${project.blogPost.title}</h3>
+                    <a href="${project.blogPost.url}" class="blog-post-link" target="_blank">
+                        Read the article <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            ` : ''}
         </div>
     `;
 }

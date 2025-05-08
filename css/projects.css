@@ -73,6 +73,37 @@
     margin-bottom: 20px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--code-bg);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+
+.project-link-btn i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.project-link-btn:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
 .project-tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +195,55 @@
     font-family: 'Fira Code', monospace;
 }
 
+.project-blog {
+    margin-top: 40px;
+    border-top: 1px solid rgba(110, 93, 207, 0.3);
+    padding-top: 40px;
+}
+
+.blog-post-card {
+    background-color: rgba(30, 42, 66, 0.6);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--light);
+}
+
+.blog-post-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.blog-post-link i {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.blog-post-link:hover {
+    color: var(--primary);
+}
+
+.blog-post-link:hover i {
+    transform: translateX(5px);
+}
+
 .tech-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -246,5 +326,15 @@
 
     .project-header h1 {
         font-size: 32px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-link-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
