@@ -13,6 +13,7 @@
     overflow: hidden;
     font-family: 'Fira Code', monospace;
     z-index: 1;
+    cursor: pointer; /* Ensure cursor shows as pointer */
 }
 
 .btn::before {
@@ -33,6 +34,23 @@
 
 .btn:hover::before {
     left: 0;
+}
+
+.btn-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-secondary::before {
+    background-color: var(--secondary);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10; /* Higher z-index to ensure buttons are clickable */
 }
 
 /* About Section */
