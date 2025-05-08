@@ -90,6 +90,7 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
+    text-align: left;
 }
 
 .about-text.visible {
@@ -105,6 +106,7 @@
 .code-comment {
     color: #6c757d;
     font-family: 'Fira Code', monospace;
+    display: inline-block;
 }
 
 /* Skills Section */
@@ -146,6 +148,10 @@
 .skill-card h3 {
     margin: 20px 0;
     color: var(--light);
+}
+
+.skill-card p {
+    text-align: left;
 }
 
 .skill-icon {
