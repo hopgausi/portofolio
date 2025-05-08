@@ -277,16 +277,21 @@ nav {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     min-height: 100vh;
     padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
 
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .hero-content {
     max-width: 600px;
-    animation: slideInLeft 1s forwards;
+    animation: slideInRight 1s forwards;
 }
 
 .hero-tag {
@@ -324,11 +329,12 @@ nav {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    animation: float 6s ease-in-out infinite, slideInRight 1s forwards;
+    animation: float 6s ease-in-out infinite, slideInLeft 1s forwards;
     border: 2px solid var(--secondary);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transform-style: preserve-3d;
     perspective: 1000px;
+    margin-right: 50px;
 }
 
 .hero-img::before {

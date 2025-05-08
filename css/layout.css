@@ -175,14 +175,19 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .hero {
+    .hero .container {
         flex-direction: column;
         text-align: center;
         padding: 150px 0 50px;
     }
 
-    .hero-content {
+    .hero-img {
+        margin-right: 0;
         margin-bottom: 50px;
+    }
+
+    .hero-content {
+        margin-top: 30px;
     }
 
     .about-content {
