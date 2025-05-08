@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/blogs.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -55,6 +56,7 @@
                     <li><a href="#about">_about</a></li>
                     <li><a href="#skills">_skills</a></li>
                     <li><a href="#projects">_projects</a></li>
+                    <li><a href="#blogs">_blogs</a></li>
                     <li><a href="#contact">_contact</a></li>
                 </ul>
                 <button class="hamburger" aria-label="Toggle menu">
@@ -239,6 +241,30 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section class="blogs" id="blogs">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="section-title">My Blog Posts</h2>
+            </div>
+            <p class="section-subtitle">/* thoughts and insights from my journey */</p>
+
+            <div class="blogs-grid">
+                <!-- Blogs will be loaded dynamically from JSON -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading blog posts...</p>
+                </div>
+            </div>
+
+            <div class="view-more-container">
+                <a href="blogs.html" class="btn view-more-btn">
+                    View All Posts <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
@@ -256,4 +282,5 @@
     <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/blogs.js"></script>
 </body>

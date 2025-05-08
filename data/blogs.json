@@ -1,0 +1,82 @@
+{
+  "blogs": [
+    {
+      "id": "health-data-integration",
+      "title": "Integrating Health Systems: Challenges and Solutions",
+      "summary": "Exploring the complexities of integrating disparate health information systems and the approaches that have proven successful in the field.",
+      "content": "Health information systems integration remains one of the most challenging aspects of healthcare IT. In this article, I discuss the common obstacles faced when connecting different systems and share practical solutions based on my experience implementing HL7 and FHIR standards in various healthcare settings.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/00ff9d?text=Health+Data+Integration",
+      "date": "2023-10-15",
+      "readTime": "8 min read",
+      "tags": ["Health IT", "System Integration", "HL7", "FHIR"],
+      "platform": "Medium",
+      "url": "https://medium.com/@hopgausi/health-data-integration",
+      "featured": true
+    },
+    {
+      "id": "vue-django-stack",
+      "title": "Building Modern Health Applications with Vue.js and Django",
+      "summary": "A comprehensive guide to creating robust healthcare applications using Vue.js for the frontend and Django for the backend.",
+      "content": "The combination of Vue.js and Django provides an excellent stack for developing healthcare applications that require both interactive user interfaces and secure, reliable backend services. This article walks through setting up a project, implementing key features, and deploying the application in a healthcare environment.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Vue+Django+Stack",
+      "date": "2023-09-02",
+      "readTime": "12 min read",
+      "tags": ["Vue.js", "Django", "Web Development", "Healthcare"],
+      "platform": "Dev.to",
+      "url": "https://dev.to/hopgausi/vue-django-stack",
+      "featured": true
+    },
+    {
+      "id": "offline-first-healthcare",
+      "title": "Offline-First Approach for Healthcare Applications in Low-Resource Settings",
+      "summary": "Strategies for developing healthcare applications that function reliably in environments with limited or intermittent internet connectivity.",
+      "content": "In many parts of the world, healthcare facilities operate with unreliable internet connections. This article explores the offline-first approach to application development, focusing on data synchronization strategies, conflict resolution, and ensuring data integrity in healthcare contexts where connectivity cannot be guaranteed.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/ff3864?text=Offline+First+Healthcare",
+      "date": "2023-07-18",
+      "readTime": "10 min read",
+      "tags": ["Offline-First", "Progressive Web Apps", "Healthcare IT"],
+      "platform": "Medium",
+      "url": "https://medium.com/@hopgausi/offline-first-healthcare",
+      "featured": true
+    },
+    {
+      "id": "data-visualization-healthcare",
+      "title": "Effective Data Visualization Techniques for Healthcare Dashboards",
+      "summary": "Best practices for designing intuitive and informative data visualizations that help healthcare professionals make better decisions.",
+      "content": "Healthcare data is complex and multidimensional. This article covers effective visualization techniques specifically tailored for healthcare dashboards, including choosing the right chart types, color schemes that accommodate color blindness, and designing interfaces that support clinical decision-making without overwhelming users.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/00ff9d?text=Data+Visualization",
+      "date": "2023-06-05",
+      "readTime": "9 min read",
+      "tags": ["Data Visualization", "Dashboard Design", "D3.js", "Healthcare Analytics"],
+      "platform": "Dev.to",
+      "url": "https://dev.to/hopgausi/data-visualization-healthcare",
+      "featured": false
+    },
+    {
+      "id": "security-healthcare-apps",
+      "title": "Security Best Practices for Healthcare Applications",
+      "summary": "Essential security measures and compliance considerations for developers building applications that handle sensitive health information.",
+      "content": "Security is paramount in healthcare applications that process protected health information. This article provides a comprehensive overview of security best practices, including HIPAA compliance requirements, encryption strategies, authentication methods, and audit logging approaches that help maintain the confidentiality and integrity of health data.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Healthcare+Security",
+      "date": "2023-05-12",
+      "readTime": "11 min read",
+      "tags": ["Security", "HIPAA", "Compliance", "Healthcare IT"],
+      "platform": "Medium",
+      "url": "https://medium.com/@hopgausi/security-healthcare-apps",
+      "featured": false
+    },
+    {
+      "id": "epidemic-modeling-python",
+      "title": "Epidemic Modeling with Python: From Basic SIR to Agent-Based Models",
+      "summary": "A technical deep dive into implementing various epidemic models using Python, from simple differential equations to complex agent-based simulations.",
+      "content": "Epidemic modeling plays a crucial role in public health planning and response. This article explores the implementation of various epidemic models in Python, starting with the basic SIR (Susceptible-Infected-Recovered) model and progressing to more complex agent-based models that can capture heterogeneous population dynamics and intervention strategies.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/ff3864?text=Epidemic+Modeling",
+      "date": "2023-04-03",
+      "readTime": "15 min read",
+      "tags": ["Python", "Epidemic Modeling", "Data Science", "Public Health"],
+      "platform": "Towards Data Science",
+      "url": "https://towardsdatascience.com/@hopgausi/epidemic-modeling-python",
+      "featured": false
+    }
+  ]
+}
