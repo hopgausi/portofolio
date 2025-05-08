@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/projects.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -180,40 +181,10 @@
             <p class="section-subtitle">/* what i've built */</p>
 
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400/1e2a42/00ff9d?text=LIMS+Project" alt="LIMS Project">
-                        <div class="project-tech">Vue.js / Django / MySQL</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Laboratory Information Management System</h3>
-                        <p>A comprehensive LIMS solution for healthcare facilities, enabling efficient sample tracking, test management, and result reporting.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Health+Dashboard" alt="Health Dashboard">
-                        <div class="project-tech">React / Node.js / MongoDB</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Health Metrics Dashboard</h3>
-                        <p>Interactive dashboard for visualizing public health data, featuring real-time updates and customizable reports for healthcare administrators.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400/1e2a42/ff3864?text=API+Integration" alt="API Integration">
-                        <div class="project-tech">Python / FastAPI / PostgreSQL</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Health Systems API Integration</h3>
-                        <p>Developed a robust API gateway that connects multiple health information systems, enabling seamless data exchange using HL7 standards.</p>
-                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <!-- Projects will be loaded dynamically from JSON -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading projects...</p>
                 </div>
             </div>
         </div>
@@ -279,4 +250,5 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
 </body>

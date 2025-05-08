@@ -1,0 +1,134 @@
+{
+  "projects": [
+    {
+      "id": "lims-project",
+      "title": "Laboratory Information Management System",
+      "shortDescription": "A comprehensive LIMS solution for healthcare facilities, enabling efficient sample tracking, test management, and result reporting.",
+      "fullDescription": "The Laboratory Information Management System (LIMS) is a comprehensive solution designed to streamline laboratory operations in healthcare facilities across Malawi. This system manages the entire lifecycle of laboratory samples, from collection to result reporting, significantly improving efficiency and reducing errors in medical testing processes.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/00ff9d?text=LIMS+Project",
+      "technologies": ["Vue.js", "Django", "MySQL"],
+      "techStack": {
+        "frontend": ["Vue.js", "Vuex", "Bootstrap Vue"],
+        "backend": ["Django", "Django REST Framework", "Celery"],
+        "database": ["MySQL", "Redis"],
+        "deployment": ["Docker", "Nginx", "Gunicorn"]
+      },
+      "features": [
+        "Sample tracking with barcode integration",
+        "Automated test workflows and result validation",
+        "Quality control monitoring and reporting",
+        "Integration with medical equipment via ASTM protocol",
+        "Comprehensive reporting and analytics dashboard",
+        "User role-based access control"
+      ],
+      "challenges": "One of the main challenges was ensuring the system could operate reliably in environments with intermittent internet connectivity. We implemented a robust offline mode with data synchronization capabilities to address this issue.",
+      "outcome": "Successfully deployed in 50+ hospitals nationwide, processing over 10,000 samples daily with a 40% reduction in result turnaround time.",
+      "projectUrl": "#",
+      "featured": true
+    },
+    {
+      "id": "health-dashboard",
+      "title": "Health Metrics Dashboard",
+      "shortDescription": "Interactive dashboard for visualizing public health data, featuring real-time updates and customizable reports for healthcare administrators.",
+      "fullDescription": "The Health Metrics Dashboard provides healthcare administrators and policy makers with real-time insights into critical public health indicators. This interactive platform aggregates data from multiple sources to present a comprehensive view of health trends, resource utilization, and program effectiveness across different regions.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/6e5dcf?text=Health+Dashboard",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "techStack": {
+        "frontend": ["React", "Redux", "D3.js", "Material UI"],
+        "backend": ["Node.js", "Express", "GraphQL"],
+        "database": ["MongoDB", "Mongoose"],
+        "deployment": ["AWS", "Docker", "CI/CD Pipeline"]
+      },
+      "features": [
+        "Real-time data visualization with interactive charts",
+        "Customizable dashboards for different user roles",
+        "Automated report generation and distribution",
+        "Geospatial mapping of health indicators",
+        "Trend analysis and predictive modeling",
+        "Data export in multiple formats"
+      ],
+      "challenges": "Integrating disparate data sources with varying formats and update frequencies presented significant challenges. We developed a flexible ETL pipeline with data validation and transformation capabilities to ensure data consistency.",
+      "outcome": "The dashboard is now used by health officials in 28 districts, leading to more data-driven decision making and a 25% improvement in resource allocation efficiency.",
+      "projectUrl": "#",
+      "featured": true
+    },
+    {
+      "id": "api-integration",
+      "title": "Health Systems API Integration",
+      "shortDescription": "Developed a robust API gateway that connects multiple health information systems, enabling seamless data exchange using HL7 standards.",
+      "fullDescription": "The Health Systems API Integration platform serves as a central hub for connecting various health information systems used across different healthcare facilities and programs. By implementing standardized protocols like HL7 and FHIR, this solution enables seamless data exchange between previously siloed systems, creating a more cohesive healthcare information ecosystem.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/ff3864?text=API+Integration",
+      "technologies": ["Python", "FastAPI", "PostgreSQL"],
+      "techStack": {
+        "frontend": ["Swagger UI", "React Admin Dashboard"],
+        "backend": ["Python", "FastAPI", "Pydantic"],
+        "database": ["PostgreSQL", "SQLAlchemy ORM"],
+        "deployment": ["Kubernetes", "Docker", "Azure Cloud"]
+      },
+      "features": [
+        "HL7 and FHIR standard implementations",
+        "Real-time message routing and transformation",
+        "Comprehensive API documentation with Swagger",
+        "Advanced error handling and retry mechanisms",
+        "Audit logging and transaction monitoring",
+        "Scalable architecture handling 1M+ daily transactions"
+      ],
+      "challenges": "Ensuring interoperability between systems with different data models and security requirements was complex. We implemented a flexible mapping engine and robust security layer to address these challenges.",
+      "outcome": "Successfully integrated 12 different health information systems, reducing manual data entry by 70% and improving data accuracy by 45%.",
+      "projectUrl": "#",
+      "featured": true
+    },
+    {
+      "id": "epidemic-modeling",
+      "title": "Epidemic Modeling System",
+      "shortDescription": "A statistical modeling platform for predicting disease spread patterns and evaluating intervention strategies for public health planning.",
+      "fullDescription": "The Epidemic Modeling System combines statistical methods with machine learning to predict the spread of infectious diseases and evaluate the potential impact of different intervention strategies. This tool helps public health officials make informed decisions about resource allocation and policy implementation during disease outbreaks.",
+      "image": "https://via.placeholder.com/600x400/1e2a42/00ff9d?text=Epidemic+Modeling",
+      "technologies": ["R", "Python", "Tableau"],
+      "techStack": {
+        "analysis": ["R", "Python", "SciPy", "NumPy", "Pandas"],
+        "modeling": ["PyTorch", "scikit-learn", "Stan"],
+        "visualization": ["Tableau", "Plotly", "Shiny"],
+        "deployment": ["Docker", "R Shiny Server"]
+      },
+      "features": [
+        "SEIR and agent-based epidemic models",
+        "Bayesian parameter estimation",
+        "Scenario analysis for different interventions",
+        "Interactive visualization of model outputs",
+        "Integration with demographic and geographic data",
+        "Automated report generation for stakeholders"
+      ],
+      "challenges": "Balancing model complexity with computational efficiency while ensuring results were accessible to non-technical stakeholders required careful design considerations.",
+      "outcome": "The system has been used to inform COVID-19 response strategies, contributing to a more targeted approach that optimized limited resources.",
+      "projectUrl": "#",
+      "featured": false
+    },
+    {
+      "id": "telehealth-platform",
+      "title": "Telehealth Consultation Platform",
+      "shortDescription": "A secure video consultation platform connecting patients with healthcare providers, featuring appointment scheduling and electronic health record integration.",
+      "fullDescription": "The Telehealth Consultation Platform provides a secure environment for remote medical consultations, addressing the challenge of healthcare access in rural areas. The system includes appointment scheduling, video consultations, electronic prescriptions, and integration with existing health records systems.",
+      "image": "https://unsplash.com/photos/a-couple-of-white-pedestals-sitting-next-to-each-other-Sm4iCS8CMtQ",
+      "technologies": ["WebRTC", "React", "Node.js"],
+      "techStack": {
+        "frontend": ["React", "Redux", "WebRTC", "Material UI"],
+        "backend": ["Node.js", "Express", "Socket.io"],
+        "database": ["PostgreSQL", "Redis"],
+        "deployment": ["AWS", "Docker", "Terraform"]
+      },
+      "features": [
+        "Secure video consultations with end-to-end encryption",
+        "Integrated appointment scheduling system",
+        "Electronic prescription generation",
+        "Patient health record access for providers",
+        "Offline mode for areas with limited connectivity",
+        "Multi-language support for diverse populations"
+      ],
+      "challenges": "Ensuring reliable video quality in areas with limited bandwidth while maintaining strict security and privacy standards was a significant technical challenge.",
+      "outcome": "The platform has facilitated over 5,000 remote consultations, providing healthcare access to patients in underserved areas and reducing travel time by an average of 3 hours per consultation.",
+      "projectUrl": "#",
+      "featured": false
+    }
+  ]
+}

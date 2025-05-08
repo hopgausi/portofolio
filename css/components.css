@@ -221,8 +221,8 @@
     transition: transform 0.5s, box-shadow 0.5s;
     position: relative;
     border: 1px solid rgba(110, 93, 207, 0.2);
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1; /* Changed from 0 to 1 to make cards visible by default */
+    transform: translateY(0); /* Changed from 50px to 0 to position cards correctly */
 }
 
 .project-card.visible {
